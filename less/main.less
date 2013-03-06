@@ -1,8 +1,80 @@
 
-@import "css/normalize.css";
-@import "css/simplegrid.css";
-@import "elements.less";
+@import "less/normalize.less";
+@import "less/simplegrid.less";
+@import "less/icons.less";
+@import "less/lesshat.less";
 
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  background-image: url('images/black_paper.png');
+}
 
+header {
+  div {
+    display: inline-block;
+    text-align: right;
+  }
+  h1 {
+    margin: 0;
+    font-size: 112px; // x8 
+  }
+  h3 {
+    margin: 0;
+    font-size: 56px;
+    font-family: Georgia, Garamond, Times, serif;
+    font-weight: 400;
+  }
+}
 
+.center {
+  text-align: center;
+}
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+  /* iPad */
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+  /* iPad landscape */
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+  /* iPhone */
+  .grid {
+    position: relative;
+    left: -10px;
+  }
+
+  header {
+    margin-top: 14px;
+    
+    div {
+      display: block;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    h3 { 
+      margin-top: 14px;
+      font-size: 22px;
+    }
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+  /* iPhone landscape */
+}
