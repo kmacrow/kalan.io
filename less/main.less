@@ -4,14 +4,251 @@
 @import "less/icons.less";
 @import "less/lesshat.less";
 
-body {
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+.sans-serif {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 14px;
-  color: #fff;
-  background-color: #000;
-  background-image: url('images/black_paper.png');
 }
 
+body {
+  .sans-serif();
+  font-size: 14px;
+  color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 112px; // x8 
+}
+
+h2 {
+  font-family: 'Fjalla One', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 28px; // x2
+  line-height: 1.4;
+}
+
+.muted {
+  color: #888;
+}
+
+.c-head {
+  text-align: center;
+  h2 {
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.c-body {
+  border-left: 1px dotted #fff;
+  padding-left: 20px;
+  p {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+#about {
+  h1 {
+    text-shadow: 2px 2px 2px #000;
+  }
+  position: relative;
+  padding-top: 10%;
+  background: #000 url('images/wolf-moon-90.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40%;
+}
+
+#edu, #courses {
+  background: #fff;
+  color: #222;
+}
+
+#academic {
+  .gradient(~"linear-gradient(to right top, #094675, #0B61A4)");
+  color: #fff;
+
+  h1, b {
+    color: #fff;
+  }
+
+  a{
+    color: #fff;
+    text-shadow: 0 0 10px #3F92D2;
+    text-decoration: none;
+  }
+  a:hover {
+    text-shadow: 0 0 20px #033E6B;
+  }
+
+  .border {
+    border-left: 1px dotted #fff;
+  }
+}
+
+#courses {
+  table {
+    margin: 0 auto;
+    width: 100%;
+  }
+  td {
+    border-bottom: 1px solid #eee;
+  }
+  tr:last-child td {
+    border-bottom: 0;
+  }
+  p {
+    font-size: 16px;
+  }
+  a{
+    text-decoration: none;
+    color: #0B61A4;
+  }
+  a:hover {
+    text-shadow: 0 0 10px rgba(11,97,164,.2);
+    color: #0B61A4;
+  };
+}
+
+#projects {
+  .gradient(~"linear-gradient(to right top, #951925, #B92E3B)");
+  table {
+    margin: 0 auto;
+
+    td.pad {
+      padding-left: 20px;
+    }
+  }
+  h2 {
+    color: #78121c;
+    text-shadow: 0 1px 1px #cb3645;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #db6672;
+  }
+  a:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,.6);
+  }
+}
+
+#github {
+  position: relative;
+  background: #fff;
+  color: #aaa;
+
+  .header {
+    .gradient(~"linear-gradient(to bottom, #f9f9f9, #f3f3f3)");
+    border-bottom: 1px solid #e5e5e5;
+
+    .section {
+      i {
+        font-size: 26px;
+        cursor: hand;
+      }
+      float: left;
+      padding: 5px 5px 0;
+      color: #555;
+    }
+
+    .divider {
+      float: left;
+      height: 40px;
+      width: 2px;
+      background: #e5e5e5;
+      border-right: 1px solid #fff;
+    }
+  }
+
+  .tooltip {
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover{
+        text-shadow: 0 0 10px rgba(255,255,255,.8);
+      }
+    }
+    display: none;
+    position: absolute;
+    .sans-serif();
+    .border-radius(2px);
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+  }
+}
+
+#gitvis_line {
+  .unit {
+    .sans-serif();
+    display: inline-block;
+    text-align: right;
+  }
+  position: absolute;
+  bottom: 10px;
+  color: #eee;
+}
+
+#brand {
+  img {
+    width: 32px;
+    opacity: .8;
+  }
+  border-right: 1px solid #222;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+  background: url('images/black_paper.png');
+  left: 0;
+  top: 0;
+}
+
+#social {
+  margin-top: 2em;
+  a {
+    margin: 5px;
+    color: #238393;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: darken(#238393,10%);
+  }
+}
+
+#nav {
+  margin-top: 2em;
+  padding: 20px;
+  a {
+    .sans-serif();
+    padding: 10px;
+    text-decoration: none;
+    border: 1px dotted #333;
+    border-left: 0;
+    border-top: 0;
+    margin-left: -4px;
+    color: #fff;
+  }
+  a:last-child{
+    border-right: 0;
+  }
+  a:hover {
+    background: #1b1b1b;
+  }
+}
+
+
+/*
 header {
   div {
     display: inline-block;
@@ -27,7 +264,7 @@ header {
     font-family: Georgia, Garamond, Times, serif;
     font-weight: 400;
   }
-}
+}*/
 
 .center {
   text-align: center;
@@ -57,7 +294,7 @@ and (max-device-width : 568px) {
 
   header {
     margin-top: 14px;
-    
+
     div {
       display: block;
       text-align: center;
