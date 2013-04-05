@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -777,27 +778,256 @@ body {
 .icon-clock:before {
   content: '🕔';
 }
-/* '\1f554' */body {
+/* '\1f554' */.sans-serif {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   color: #fff;
-  background-color: #000;
-  background-image: url('images/black_paper.png');
 }
-header div {
-  display: inline-block;
-  text-align: right;
-}
-header h1 {
+h1 {
   margin: 0;
   font-size: 112px;
 }
-header h3 {
+h2 {
+  font-family: 'Fjalla One', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   margin: 0;
-  font-size: 56px;
-  font-family: Georgia, Garamond, Times, serif;
-  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
 }
+p {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 28px;
+  line-height: 1.4;
+}
+.muted {
+  color: #888;
+}
+.c-head {
+  text-align: center;
+}
+.c-head h2 {
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.c-body {
+  border-left: 1px dotted #fff;
+  padding-left: 20px;
+}
+.c-body p {
+  text-align: justify;
+  hyphens: auto;
+}
+#about {
+  position: relative;
+  padding-top: 10%;
+  background: #000000 url('images/wolf-moon-90.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40%;
+}
+#about h1 {
+  text-shadow: 2px 2px 2px #000;
+}
+#edu,
+#courses {
+  background: #fff;
+  color: #222;
+}
+#academic {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj50byByaWdodCA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIiIHN0b3AtY29sb3I9IiMwOTQ2NzUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iIiBzdG9wLWNvbG9yPSIjMEI2MUE0IiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+  background-image: -moz-linear-gradient(left top, #094675, #0B61A4);
+  background-image: -webkit-linear-gradient(left top, #094675, #0B61A4);
+  background-image: -o-linear-gradient(left top, #094675, #0B61A4);
+  background-image: linear-gradient(to right top, #094675, #0B61A4);
+  color: #fff;
+}
+#academic h1,
+#academic b {
+  color: #fff;
+}
+#academic a {
+  color: #fff;
+  text-shadow: 0 0 10px #3F92D2;
+  text-decoration: none;
+}
+#academic a:hover {
+  text-shadow: 0 0 20px #033E6B;
+}
+#academic .border {
+  border-left: 1px dotted #fff;
+}
+#courses table {
+  margin: 0 auto;
+  width: 100%;
+}
+#courses td {
+  border-bottom: 1px solid #eee;
+}
+#courses tr:last-child td {
+  border-bottom: 0;
+}
+#courses p {
+  font-size: 16px;
+}
+#courses a {
+  text-decoration: none;
+  color: #0B61A4;
+}
+#courses a:hover {
+  text-shadow: 0 0 10px rgba(11, 97, 164, 0.2);
+  color: #0B61A4;
+}
+#projects {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj50byByaWdodCA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIiIHN0b3AtY29sb3I9IiM5NTE5MjUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iIiBzdG9wLWNvbG9yPSIjQjkyRTNCIiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+  background-image: -moz-linear-gradient(left top, #951925, #B92E3B);
+  background-image: -webkit-linear-gradient(left top, #951925, #B92E3B);
+  background-image: -o-linear-gradient(left top, #951925, #B92E3B);
+  background-image: linear-gradient(to right top, #951925, #B92E3B);
+}
+#projects table {
+  margin: 0 auto;
+}
+#projects table td.pad {
+  padding-left: 20px;
+}
+#projects h2 {
+  color: #78121c;
+  text-shadow: 0 1px 1px #cb3645;
+}
+#projects a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 10px #db6672;
+}
+#projects a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+#github {
+  position: relative;
+  background: #fff;
+  color: #aaa;
+}
+#github .header {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIiIHN0b3AtY29sb3I9IiNmOWY5ZjkiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iIiBzdG9wLWNvbG9yPSIjZjNmM2YzIiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: linear-gradient(to bottom, #f9f9f9, #f3f3f3);
+  border-bottom: 1px solid #e5e5e5;
+}
+#github .header .section {
+  float: left;
+  padding: 5px 5px 0;
+  color: #555;
+}
+#github .header .section i {
+  font-size: 26px;
+  cursor: hand;
+}
+#github .header .divider {
+  float: left;
+  height: 40px;
+  width: 2px;
+  background: #e5e5e5;
+  border-right: 1px solid #fff;
+}
+#github .tooltip {
+  display: none;
+  position: absolute;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  -webkit-border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px;
+  -moz-background-clip: padding;
+  border-radius: 2px;
+  background-clip: padding-box;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+}
+#github .tooltip a {
+  text-decoration: none;
+  color: #fff;
+}
+#github .tooltip a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+#gitvis_line {
+  position: absolute;
+  bottom: 10px;
+  color: #eee;
+}
+#gitvis_line .unit {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  text-align: right;
+}
+#brand {
+  border-right: 1px solid #222;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+  background: url('images/black_paper.png');
+  left: 0;
+  top: 0;
+}
+#brand img {
+  width: 32px;
+  opacity: .8;
+}
+#social {
+  margin-top: 2em;
+}
+#social a {
+  margin: 5px;
+  color: #238393;
+  font-size: 24px;
+  text-decoration: none;
+}
+#social a:hover {
+  color: #195e6a;
+}
+#nav {
+  margin-top: 2em;
+  padding: 20px;
+}
+#nav a {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px dotted #333;
+  border-left: 0;
+  border-top: 0;
+  margin-left: -4px;
+  color: #fff;
+}
+#nav a:last-child {
+  border-right: 0;
+}
+#nav a:hover {
+  background: #1b1b1b;
+}
+/*
+header {
+  div {
+    display: inline-block;
+    text-align: right;
+  }
+  h1 {
+    margin: 0;
+    font-size: 112px; // x8 
+  }
+  h3 {
+    margin: 0;
+    font-size: 56px;
+    font-family: Georgia, Garamond, Times, serif;
+    font-weight: 400;
+  }
+}*/
 .center {
   text-align: center;
 }
